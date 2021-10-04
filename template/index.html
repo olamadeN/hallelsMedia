@@ -1,0 +1,152 @@
+<style>
+    #Nav{
+        top:50%;
+    }
+
+
+</style>
+
+{% extends 'globalTemplate.html' %}
+{% load static %}
+{% block content %}
+    <section class="banner">
+        <nav class="container navbar navbar-expand-lg navbar-light p-0 w-100" id="Nav">
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="justify-content-center collapse navbar-collapse" id="navbarNav" >
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="{% url 'home'%}">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="{% url 'uploads:test'%}">Gallery</a>
+                    </li>
+                </ul>
+            </div>  
+        </nav>
+                
+        <div class="carousel-inner container">
+            <div class="banner-content">
+                <img src="{% static 'img/banner21.png' %}" style="height:px;" class="home-image d-block w-100">
+                <div class="overlay container p-0"></div>
+                <div class="home-text text-center">
+                    <h1>Hallel's Media</h1>
+                    <p class="">more than a marvel</p>
+                    <ul class="slider-social list-unstyled">
+                        <li><a href="#"><span class="icon-facebook"></span></a></li>
+                        <li><a href="https://www.instagram.com/hallelsmedia"><span class="icon-instagram"></span></a></li>
+                        <li><a href="#"><span class="icon-whatsapp"></span></a></li>
+                    </ul>
+                    <div class="button"> explore</div>                 
+                </div>
+                <div class="socials">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" bg-light" >
+        <div class="container welcome px-4" >
+            <div class="pt-3 text-center">
+                <h1> about </h1>
+                <p class="h5 text-muted">hallels media</p>
+            </div>
+            <div class="row" data-aos="fade-up">
+                <div class="about col-lg-6 my-md-3">
+                    <p class="py-4 text-muted" >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, vitae cupiditate. Esse quas aliquid ea necessitatibus amet, in voluptatibus officiis praesentium quos quaerat assumenda expedita nesciunt officia dolor ratione ut! Lorem, ipsum dolor
+                         sit amet consectetur adipisicing elit. Provident accusantium, dolores similique possimus nesciunt, doloribus fuga numquam ullam consequatur, dolor vel enim fugit omnis atque quisquam corrupti laudantium nostrum ducimus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde optio laudantium error dolorem, exercitationem eos, deserunt neque ad fugit praesentium, tempore doloribus tempora iure quam porro dolor ea reprehenderit magnam!
+                    </p>
+                    <span class="read-more p-3 text-center"> <a class="text-white" href="about.html#brief">Read More</a></span>
+                </div>
+                <img class="col-lg-6" src="{% static 'img/white-logo.jpg'%}" height="350px" >  
+            </div>
+        </div>
+    </section>
+    <section class="services bg-white" id="services">
+        <div class="container text-center mt-5 p-4">
+            <h1 class="subheading">Our Services</h1>
+            <p class="text-muted h5" > We offer top end services to our ever satisfied customer population</p>             
+            <div class="row mt-3 justify-content-left">
+                <div class="card col-lg-4 col-md-6 mb-2 text-left p-0" data-aos="fade-left">
+                    <div class="card-body p-0 gal-pack">
+                        <a href="{% static 'img/drone2.jpg'%}"><img src="{% static 'img/drone2.jpg'%}" class="card-img p-1" alt=""></a>
+                        <div class="mx-1">
+                            <h2 class="card-title mb-1">Drone Coverage</h2>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolor perferendis voluptatum dolorum voluptate doloremque consequatur perspiciatis molestiae.
+                            </p>                        
+                        </div>                      
+
+                    </div>             
+                </div>  
+                <div class="card col-lg-4 col-md-6 mb-2 text-left p-0" data-aos="fade-left">
+                    <div class="card-body p-0 gal-pack">
+                        <a href="{% static 'img/videdit2.jpg'%}"><img src="{% static 'img/videdit2.jpg'%}" class="card-img p-1" alt=""></a>
+                        <div class="mx-1">
+                            <h2 class="card-title mb-1">video editing</h2>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolor perferendis voluptatum dolorum voluptate doloremque consequatur perspiciatis molestiae.
+                            </p>                        
+                        </div>                      
+
+                    </div>             
+                </div>
+                <div class="card col-lg-4 col-md-6 mb-2 text-left p-0" data-aos="fade-left">
+                    <div class="card-body p-0 gal-pack">
+                        <a href="{% static 'img/studio2.jpg'%}"><img src="{% static 'img/studio2.jpg'%}" class="card-img p-1" alt=""></a>
+                        <div class="mx-1">
+                            <h2 class="card-title mb-1">studio shoot</h2>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolor perferendis voluptatum dolorum voluptate doloremque consequatur perspiciatis molestiae.
+                            </p>                        
+                        </div>                      
+
+                    </div>             
+                </div>
+                <div class="card col-lg-4 col-md-6 mb-2 text-left p-0" data-aos="fade-right">
+                    <div class="card-body p-0 gal-pack">
+                        <img src="{% static 'img/wedding.jpg'%}" class="card-img p-1" alt="">
+                        <div class="mx-1">
+                            <h2 class="card-title mb-1">wedding
+                                shoot</h2>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolor perferendis voluptatum dolorum voluptate doloremque consequatur perspiciatis molestiae.
+                            </p>                        
+                        </div>                      
+
+                    </div>             
+                </div>
+                <div class="card col-lg-4 col-md-6 mb-2 text-left p-0" data-aos="fade-right">
+                    <div class="card-body p-0 gal-pack">
+                        <img src="{% static 'img/EventCoverage.jpg'%}" class="card-img p-1" alt="">
+                        <div class="mx-1">
+                            <h2 class="card-title mb-1">event coverage</h2>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolor perferendis voluptatum dolorum voluptate doloremque consequatur perspiciatis molestiae.
+                            </p>                        
+                        </div>                      
+                    </div>             
+                </div> 
+                <div class="card col-lg-4 col-md-6 mb-2 text-left p-0" data-aos="fade-right">
+                    <div class="card-body p-0 gal-pack">
+                        <img src="{% static 'img/photograph.jpg'%}" class="card-img p-1" alt="">
+                        <div class="mx-1">
+                            <h2 class="card-title mb-1">Photography</h2>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolor perferendis voluptatum dolorum voluptate doloremque consequatur perspiciatis molestiae.
+                            </p>                        
+                        </div>                      
+                    </div>             
+                </div>    
+                
+            </div>       
+       </div>
+
+    </section>
+
+        
+    
+    
+{% endblock %}

@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing the Upload</title>
+</head>
+<body>
+    <h1>our delish menu</h1>
+    <div class="container-fluid text-center mt-5">
+        <div class="row mt-1">    
+            {% for item in gallery %}
+                <div class="col-lg-3 col-md-6 my-1" style="height:170px;">
+                    <a href="{{item.thumbnail.url}}">
+                        <div class="gal-pack" >
+                            <img src="{{item.thumbnail.url}}" style="" class="card-img" alt="">
+                        </div>
+                    </a>               
+                </div>
+            {% endfor %}                
+        </div>
+    </div>
+
+</body>
+</html>

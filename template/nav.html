@@ -1,0 +1,24 @@
+<nav class="container navbar navbar-expand-lg navbar-light p-0">
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+    </button>
+    <div class="justify-content-center collapse navbar-collapse" id="navbarNav" >
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{% url 'home'%}">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{% url 'uploads:test'%}">Gallery</a>
+            </li>
+        </ul>
+    </div>  
+</nav>
+
+
+        nav{
+            background:#000f1678; 
+        }
+        .nav-link{
+            font-size: 18px;
+            color: #000f16;
+        }

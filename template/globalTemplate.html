@@ -1,0 +1,50 @@
+{% load static %}
+    <style>
+
+        .footer .copyright{
+            font-size:23px;
+            margin: 0 35%;
+        }
+    </style>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sinnot Technologies</title>
+        <link rel="shortcut icon" href="{% static 'img/favicon.ico'%}" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+        <link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+        <link rel="stylesheet" href="{% static 'css/main.css'%}">
+        <link rel="stylesheet" href="{% static 'css/aos.css'%}">
+    </head>
+    <body class="d-block block-column">
+        
+        {% block content %}
+
+        {% endblock %}
+        <footer class="container footer bg-white w-100">
+            <div class="row">                
+                <div class="copyright text-muted">
+                    <p class="align-center">copyright hallel'smedia2021</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/bootstrap.js' %}"></script>
+        <script src="{% static 'js/aos.js' %}"></script>
+        <script>
+            AOS.init(
+                {
+                    offset:300,
+                    duration:1500,
+                }
+            );
+
+        </script>
+
+    </body>
+    </html>

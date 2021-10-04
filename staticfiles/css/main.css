@@ -1,0 +1,249 @@
+
+body{
+    font-family:'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+/*navigation-bar*/
+
+
+/*footer styles*/
+    .footer .copyright{
+        font-size:23px;
+        margin: 0 35%;
+}
+/*homepage styles*/
+.banner-content{
+    height: auto;
+}
+.home-text{
+    position: absolute;
+    width:30%;
+    top:30%;
+    margin: 0px 34%;
+    z-index:1;
+    animation-name: entrance;
+    animation-duration: 2.5s;
+    animation-delay: 10ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+ul.slider-social li span {
+    color:#084d6d;
+    font-size: 25px;
+    animation-name: entrance;
+}
+ul.slider-social li{
+    display: inline-block;
+    margin-right: 10px;
+}
+ul.slider-social li a:hover{
+    text-decoration:none;
+}
+@keyframes entrance{
+    0%{ 
+        color:transparent;
+        top:100%;
+        visibility: hidden;
+    }
+
+    100%{
+        color:white;
+        visibility: visible;
+        transform: translateY(48%);
+        border-color: transparent;
+    }
+}
+.button{
+    padding:8px;
+    font-size: 20px;
+    text-transform: capitalize;
+    width:32%;
+    margin: 0 33%;
+    color:aqua;
+    cursor: pointer;
+    
+}
+
+.banner{
+    z-index:0;
+}
+.home-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    transform: translateX()
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .5;
+    width: 100%;
+    background:#000f16; 
+}
+#home-text{
+    position: absolute;
+    top: 36%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#home-text h2{ 
+font-family: sans-serif; 
+font-weight: bold;
+font-size: 20px;
+letter-spacing: 4px;
+text-transform: capitalize;
+display: inline-block;
+color:white }
+
+#home-text h1 {
+font-size: 7vw;
+color: #fff;
+line-height: 1.3;
+font-weight: 400;
+font-family: sans-serif; 
+}
+@media (max-width: 768px) {
+    #home-text{
+        top: 30%;
+    }
+    #home-text h1 {
+    font-size: 50px; 
+    margin-top: 70px;
+    } 
+    #home-text h2 {
+        font-size: 15px; 
+    } 
+    .home-image{
+        height:400px;
+    }
+    .welcome div img{
+        margin-top: 30px;
+    }
+}
+.welcome{
+    margin-top: 20px;
+}
+.welcome h1{
+    color:  #084d6d;
+    font-size: 50px;
+    font-weight:500;
+    text-transform: capitalize;
+    font-family: sans-serif ; 
+}
+.welcome div .about{
+    background: image(url);
+}
+.read-more{
+    background: #084d6d;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;;
+}
+.read-more a:hover{
+    text-decoration:none;
+}
+.package_button button{
+    border: solid 2px transparent;
+}
+
+/* our services */
+.services{
+    cursor: default;
+    margin-bottom: 20px;
+}
+.subheading{
+    color: #084d6d;
+}
+.card-text {
+    color: #084d6d;
+    font-size: 14px;
+}
+.card .card-body img{
+    height: 260px;
+}
+.card-title{
+    font-weight:bolder;
+    font-size: 30px;
+    word-spacing:-2px;
+    text-transform: capitalize;
+    background:gold;
+    color:whitesmoke;
+    width:100%;
+    text-align: right;
+    animation-name: card-enterance;
+    animation-duration: 1s;
+    animation-delay: 10ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+@keyframes card-enterance{
+    0%{
+        transform: translateX(100%);
+        color: transparent; 
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+/* Request a Quote */
+#rfq{
+    word-break: break-all;
+    width:100%;
+    padding: 0;
+    height:270px;
+}
+/* Gallery */
+.carousel-item img{
+    height:570px;
+    background-size:contain;
+}
+.slide-text{
+    position: absolute;
+    top:28%;
+    animation-name: entrance;
+    animation-duration: 1.2s;
+    animation-delay: 0;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+.slide-text .gal-head{
+    font-size: 50px;
+    color: white;
+
+}
+.gal-slider .slide-text .gal-subhead{
+    font-size:20px;
+    color:aqua;
+}
+.slide-text .gal-story{
+    font-size:25px;
+}
+ul.slider-social li span {
+    color: aqua;
+    font-size: 25px;
+    animation-name: entrance;
+}
+ul.slider-social li{
+    display: inline-block;
+    margin-right: 10px;
+}
+@keyframes entrance{
+    0%{ 
+        color:transparent;
+        top:100%;
+        visibility: hidden;
+    }
+
+    100%{
+        color:white;
+        visibility: visible;
+        transform: translateY(48%);
+        border-color: transparent;
+    }
+}
